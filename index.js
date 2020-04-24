@@ -11,8 +11,12 @@ app.use(express.json())
 
 app.get("/", async (req, res) => {
   const data =  await fetch(`https://newsapi.org/v2/top-headlines?country=gb&apiKey=${apiKey}`)
-  const json = await data.json()
-  res.json(json.status)
+  const jsonData = await data.json()
+  const articles = jsonData.articles
+  const newTitles = articles.map(article => {
+    return article.title
+  })
+  res.json(newTitles)
 })
 
 app.listen(port, () => {
