@@ -21,7 +21,8 @@ app.get("/", async (req, res) => {
     return article.title
   })
   res.render('index', {
-    newsTitles: newsTitles
+    newsTitles: newsTitles,
+    newsapiLink: 'https://newsapi.org'
   })
 })
 
