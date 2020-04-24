@@ -8,6 +8,9 @@ const apiKey = 'c3d70ad0232d4ecfb9bed0c791c22710'
 
 app.use(express.json())
 
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+
 app.get("/", async (req, res) => {
   const data =  await fetch(`https://newsapi.org/v2/top-headlines?country=gb&apiKey=${apiKey}`)
   const jsonData = await data.json()
