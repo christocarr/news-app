@@ -1,5 +1,7 @@
 <h1>News App</h1>
 
-<%= newsTitles.map(title => {
-  title
-}) %>
+<ul>
+  <% for(let title of newsTitles) { %>
+    <li><%= title %></li>
+  <% } %>
+</ul>
