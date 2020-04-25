@@ -4,23 +4,29 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <main>
 
-    <h1>News App</h1>
+      <h1>News App</h1>
 
-    <ul>
-      <% for(let article of articles) { %>
-        <li>
-          <h2><%= article.title %></h2>
-          <p><%= article.content %></p>
-          <a href="<%= article.url %>">Read more...</a>
-        </li>
-      <% } %>
-    </ul>
+      <ul>
+        <% for(let article of articles) { %>
+          <li>
+            <article>
+              <h2><%= article.title %></h2>
+              <p><%= article.content %></p>
+              <a href="<%= article.url %>">Read more...</a>
+            </article>
+          </li>
+        <% } %>
+      </ul>
 
-    <!-- footer region -->
-    <p>News headlines provided by 
-      <a href="<%= newsapiLink %>">newsapi.org</a> 
-    </p>
+    </main>
+    
+    <footer>
+      <p>News headlines provided by 
+        <a href="<%= newsapiLink %>">newsapi.org</a> 
+      </p>
+    </footer>
 
   </body>
 </html>
