@@ -20,10 +20,15 @@ app.get("/", async (req, res) => {
   const newsTitles = articles.map(article => {
     return article.title
   })
+  const newsArticles = articles.map(article => {
+    return article.content
+  })
   res.render('index', {
     newsTitles: newsTitles,
+    newsArticles: newsArticles,
     newsapiLink: 'https://newsapi.org'
   })
+  // res.send(articles[0])
 })
 
 app.listen(port, () => {
