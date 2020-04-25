@@ -1,16 +1,25 @@
-<h1>News App</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
 
-<ul>
-  <% for(let article of articles) { %>
-    <li>
-      <h2><%= article.title %></h2>
-      <p><%= article.content %></p>
-      <a href="<%= article.url %>">Read more...</a>
-    </li>
-  <% } %>
-</ul>
+    <h1>News App</h1>
 
-<!-- footer region -->
-<p>News headlines provided by 
-  <a href="<%= newsapiLink %>">newsapi.org</a> 
-</p>
+    <ul>
+      <% for(let article of articles) { %>
+        <li>
+          <h2><%= article.title %></h2>
+          <p><%= article.content %></p>
+          <a href="<%= article.url %>">Read more...</a>
+        </li>
+      <% } %>
+    </ul>
+
+    <!-- footer region -->
+    <p>News headlines provided by 
+      <a href="<%= newsapiLink %>">newsapi.org</a> 
+    </p>
+
+  </body>
+</html>
