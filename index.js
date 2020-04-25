@@ -17,18 +17,10 @@ app.get("/", async (req, res) => {
   const data =  await fetch(`https://newsapi.org/v2/top-headlines?country=gb&apiKey=${apiKey}`)
   const jsonData = await data.json()
   const articles = jsonData.articles
-  const newsTitles = articles.map(article => {
-    return article.title
-  })
-  const newsArticles = articles.map(article => {
-    return article.content
-  })
   res.render('index', {
-    newsTitles: newsTitles,
-    newsArticles: newsArticles,
+    articles: articles,
     newsapiLink: 'https://newsapi.org'
   })
-  // res.send(articles[0])
 })
 
 app.listen(port, () => {
