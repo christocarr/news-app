@@ -21,6 +21,7 @@ app.get("/", async (req, res) => {
     articles: articles,
     newsapiLink: 'https://newsapi.org'
   })
+  // res.send(articles)
 })
 
 app.listen(port, () => {
