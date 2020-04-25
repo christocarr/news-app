@@ -13,4 +13,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+h1, article {
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style: none;
 }
