@@ -25,12 +25,17 @@ article {
   padding: 0.5rem;
 }
 
+
 h2 {
   font-size: 1.4rem;
 }
 
 ul {
   list-style: none;
+}
+
+ul li:nth-child(even) {
+  background-color: lightgray;
 }
 
 footer {
