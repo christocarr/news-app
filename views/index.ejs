@@ -1,10 +1,15 @@
 <h1>News App</h1>
 
 <ul>
-  <% for(let title of newsTitles) { %>
-    <li><%= title %></li>
+  <% for(let article of articles) { %>
+    <li>
+      <h2><%= article.title %></h2>
+      <p><%= article.content %></p>
+    </li>
   <% } %>
 </ul>
 
 <!-- footer region -->
-<p>News headlines provided by <a href="<%= newsapiLink %>">newsapi.org</a> </p>
+<p>News headlines provided by 
+  <a href="<%= newsapiLink %>">newsapi.org</a> 
+</p>
