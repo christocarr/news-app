@@ -9,12 +9,12 @@
     <main>
 
       <h1>News App</h1>
-
+      <h2>News Headlines From the UK</h2>
       <ul>
         <% for(let article of articles) { %>
           <li>
             <article>
-              <h2><%= article.title %></h2>
+              <h3><%= article.title %></h3>
               <p><%= article.content %></p>
               <a href="<%= article.url %>">Read more...</a>
             </article>
