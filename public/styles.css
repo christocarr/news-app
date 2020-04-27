@@ -17,12 +17,14 @@ main {
   margin: auto;
 }
 
-h1, article {
+h1 {
+  font-family: serif;
   margin: 1rem 0;
 }
 
 article {
   padding: 0.5rem;
+  margin: 1rem 0;
 }
 
 
