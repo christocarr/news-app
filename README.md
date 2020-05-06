@@ -22,4 +22,4 @@ $ cd news-app
 $ npm install
 $ node index.js
 ```
-Then in your chosen browser go to ```http://localhost:8000``` to view the running.
+Then in your chosen browser go to ```http://localhost:8000``` to view the running app.
