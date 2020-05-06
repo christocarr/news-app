@@ -12,3 +12,14 @@ The app uses an api to fetch data and backend code to render views to the fronte
 [NewsAPI]: <https://newsapi.org/>
 [Express.js]: <https://expressjs.com/>
 [EJS]: <https://ejs.co/>
+
+### Installation
+
+Clone the repo, cd into the repo, install the dependencies, and start the server.
+
+```sh
+$ cd news-app
+$ npm install
+$ node index.js
+```
+Then in your chosen browser go to ```http://localhost:8000``` to view the running.
